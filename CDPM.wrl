@@ -1,0 +1,192 @@
+#VRML V2.0 utf8
+
+DEF N1R Transform {
+  translation 5 0 5
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0.8 0 0.2
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 2.8
+    }
+  }
+}
+DEF N2Y Transform {
+  translation -5 0 5
+  rotation 0 1 0 3
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 1 0.2
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 2.8
+    }
+  }
+}
+DEF N3B Transform {
+  translation 5 0 -5
+  rotation 0 1 0 0
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 0 1
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 2.8
+    }
+  }
+}
+DEF N4G Transform {
+  translation -5 0 -5
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 1 0
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 2.8
+    }
+  }
+}
+DEF Base Transform {
+  translation 0 -1.1 0
+  scale 0.6 1 0.6
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        repeatT FALSE
+        repeatS FALSE
+        url "*sl3dlib/objects/Textures/General/check2.png" 
+      }
+      material Material {
+        emissiveColor 0.6 0.6 0.6
+        diffuseColor 0.4 0.4 0.4
+      }
+    }
+    geometry Box {
+      size 15 0.1 15
+    }
+  }
+}
+DEF Line Transform {
+  children DEF L_SHAPE Shape {
+    appearance Appearance {
+    }
+    geometry DEF L_INDEX IndexedLineSet {
+      coordIndex [
+        0, 4, -1, 
+        0, 3, -1, 
+        0, 2, -1, 
+        0, 1, -1 
+      ]
+      colorPerVertex FALSE
+      colorIndex [
+        1, 3, 0, 2 
+      ]
+      coord DEF LINES Coordinate {
+        point [
+          0 0.1 0,
+          -5 2 -5,
+          5 2 5,
+          -5 2 5,
+          5 2 -5 
+        ]
+      }
+      color Color {
+        color [
+          1 0 0.2,
+          0 0 1,
+          0.2 1 0,
+          1 1 0.2 
+        ]
+      }
+    }
+  }
+}
+DEF EoF Transform {
+  children Shape {
+    appearance Appearance {
+      material Material {
+        shininess 0.5
+        diffuseColor 0.77 0.09 1
+      }
+    }
+    geometry Box {
+      size 0.6 0.6 0.6
+    }
+  }
+}
+DEF Iso Viewpoint {
+  position -4.10078 4.46902 14.335
+  orientation -0.71218 -0.520658 -0.470865 0.428366
+}
+DEF N2YR Transform {
+  translation -5 1.9 5
+  rotation 0 1 0 1
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Checker.png" 
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 0.5
+    }
+  }
+}
+DEF N1RR Transform {
+  translation 5 1.9 5
+  rotation 0 1 0 5
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Checker.png" 
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 0.5
+    }
+  }
+}
+DEF N3BR Transform {
+  translation 5 1.9 -5
+  rotation 0 1 0 4
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Checker.png" 
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 0.5
+    }
+  }
+}
+DEF N4GR Transform {
+  translation -5 1.9 -5
+  rotation 0 1 0 4
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Checker.png" 
+      }
+    }
+    geometry Cylinder {
+      radius 0.5
+      height 0.5
+    }
+  }
+}
